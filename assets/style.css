@@ -1,0 +1,83 @@
+body {
+  background: orange;
+}
+
+h1 {
+  text-align: center;
+}
+
+.quote {
+  font-size: 36px;
+  line-height: 1.3em;
+  margin: 0 auto 10px;
+  width: 60%;
+  padding: 10px;
+  background: white;
+  border-radius: 25px;
+  text-align: center;
+
+}
+
+.quote-author {
+  display: block;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote-source {
+display: block;
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.quote-source a {
+    color: blue;
+}
+
+#twitter {
+  display: block;
+  margin-top: 8px;
+  margin-left: 29px;
+  text-align: center;
+  font-size: 24px;
+ }
+
+.fa-twitter {
+  color: #55ACEE;
+  font-size: 34px;
+}
+
+.new-quote-button-wrapper {
+  position: relative;
+  width: 90%;
+  z-index: 1;
+  margin: 0 auto;
+ }
+
+.new-quote-button-wrapper .get-new-quote-button {
+    display: block;
+    text-align: center;
+    box-shadow: 0 0 10px 10px white;
+    font-size: 18px;
+}
+
+.get-new-quote-button {
+  text-decoration: none;
+  color: red;
+  border: 3px solid #ff0000;
+  border-radius: 5px;
+  padding: 15px;
+  font-weight: bold;
+  background: #fff;
+  margin: 10px;
+  display: block;
+  width: 30%;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 auto;
+}
