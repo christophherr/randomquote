@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
-<meta charset="utf-8">
-<title>Free Code Camp Random Quote Generator</title>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-<link href="/assets/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <title>Free Code Camp Random Quote Generator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" rel="stylesheet" type="text/css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-<div id="quote-box">
-    <h1>Quotes provided by quotesondesign.com</h1>
-    <div id="text" class="quote">Design creates culture. Culture shapes values. Values determine the future.</div>
-    <p class="author">
-        <span id="author" class="quote-author">ROBERT L. PETERS</span>
-        <span class="quote-source">							</span>
-        <br />
-        <a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank"><span class="fa fa-twitter"></span> Click to tweet</a>
-    </p>
-    <div class="new-quote-button-wrapper">
-        <a href="/" id="new-quote" class="get-new-quote-button">Click here to show a new quote</a>
+    <div id="quote-box">
+        <section class="hero is-success is-bold">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        Random Quote Generator
+                    </h1>
+                    <h2 class="subtitle">
+                        Quotes provided by quotesondesign.com
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <div class="card">
+            <div id="text" class="card-content quote">Design creates culture. Culture shapes values. Values determine the future.</div>
+            <p class="subtitle author">
+                <span id="author" class="quote-author">ROBERT L. PETERS</span>
+                <span id="source" class="quote-source">							</span>
+            </p>
+            <div class="card-footer">
+                <p class="card-footer-item">
+                    <span>
+                    <a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank" href="https://twitter.com/intent/tweet/?text=Design%20creates%20culture.%20Culture%20shapes%20values.%20Values%20determine%20the%20future.%20https://quotesondesign.com/robert-l-peters/">
+                    <span class="fa fa-twitter"></span> Click to tweet</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="new-quote-button-wrapper">
+            <button id="new-quote" class="get-new-quote-button">Click here to show a new quote</button>
+        </div>
     </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="/assets/app.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/assets/app.js"></script>
 </body>
+
 </html>
